@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+
+<style>
+body{
+    font-family: Microsoft PhagsPa;
+    background-color: pink;
+}
+
+input[type=text], input[type=password], textarea {
+  width: 20%;
+  padding: 5px;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  border: thin solid;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: orange;
+  outline: none;
+}
+
+table, th, td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                  }
+</style>
+
+<body>
+    <h2> MIT WPU ADMISSION </h2> 
+    <img src="Image Footage.jpg" alt="College" style="width:504px;height:378px;">
+    <form action="backend.php">
+        <br>
+        <label> First Name: </label> 
+        <input type="text" name="firstname" placeholder= "First Name" size=15" required /> 
+        <label> Middle Name: </label> 
+        <input type="text" name="middlename" placeholder="Middle Name" size="15" required /> 
+        <label> Last Name: </label>  
+        <input type="text" name="lastname" placeholder="Last Name" size="15"required /> 
+
+        <br>
+        <div>
+            <label> <br>
+            Course:
+            </label> 
+            <select>
+            <option value="Course">Select</option>
+            <option value="BCA">BCA</option>
+            <option value="BBA">BBA</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="MBA">MBA</option>
+            <option value="MCA">MCA</option>
+            <option value="M.Tech">M.Tech</option>
+            </select>
+            </div>
+            
+        <div>
+            <label> <br>
+            Gender:
+            </label>
+            <input type="radio" value="Male" name="gender"> Male 
+            <input type="radio" value="Female" name="gender"> Female 
+            <input type="radio" value="Other" name="gender"> Other
+        </div>
+
+        <div>
+            <label> <br>
+            Phone Number:
+            </label>
+            <input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/> 
+        </div>
+            
+        <div>
+            <label> <br>
+            Email ID:
+            </label>    
+            <input type="text" name="email" placeholder= "Email ID" size="15" required /> 
+        </div>
+        
+        <br>
+        <div class="class">
+            <table class="table">
+                
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">EMail</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Yash</td>
+                    <td>Sinha</td>
+                    <td>1032202022</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Tejas</td>
+                    <td>Patil</td>
+                    <td>1032202018</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Aditya</td>
+                    <td>Taware</td>
+                    <td>1032202012</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+            <br>
+
+        <div>
+            <label> <br>
+                Date:
+            </label>
+            <input type="date" name="myDate">
+        </div>
+
+        <div>
+            <label> <br>
+            Current Address:
+            </label>    
+            <input type="text" name="address" placeholder= "Current Address" size="15" required /> 
+        </div>
+
+        <div>
+            <br>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+
+        <hr>
+        <div class="video">
+            <a href="Video Footage.mp4" target="_blank">Play Video</a>
+        </div>
+        <hr>
+        <div class="Audio Footage.mp3">
+
+                <a href="https://www.computerhope.com/jargon/m/example.mp3" target="_blank">Play Audio</a>
+              
+        </div>
+    </form>
+</body>
+
+</html>
